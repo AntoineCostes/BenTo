@@ -8,9 +8,10 @@
 //  #define CLARINET
 //  #define GLOVE
 //  #define GENERIC_PWM
-  #define DMX
+//  #define DMX
 //    #define DRESS
 //#define FLAIR
+#define SERVO
 
 #if defined CREATOR_PROTO_V0
 #include "config_protov0.h"
@@ -34,6 +35,8 @@
 #include "config_dress.h"
 #elif defined FLAIR
 #include "config_flair.h"
+#elif defined SERVO
+#include "config_servo.h"
 #endif
 
 #ifdef LED_INVERT_DIRECTION
